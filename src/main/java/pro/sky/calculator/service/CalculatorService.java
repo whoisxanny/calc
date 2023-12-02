@@ -1,4 +1,4 @@
-package pro.sky.calculator.servicee;
+package pro.sky.calculator.service;
 
 public interface CalculatorService {
     String info();

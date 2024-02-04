@@ -40,12 +40,8 @@ public class CalculatorController {
 
     @GetMapping(path = "/divide")
     public String divide(@RequestParam Integer num1, @RequestParam Integer num2) {
-        if (num2 != 0) {
             Integer result = calculatorService.divide(num1, num2);
             return getResultMessage(num1, num2, '/', result);
-        } else {
-            return "Mistake";
-        }
     }
 
     public String getResultMessage(Integer num1, Integer num2, char action, Integer result) {
